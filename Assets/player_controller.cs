@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class player_controller : MonoBehaviour
 {
-    public int speed { get; set; }
-    private Rigidbody2D rb;
-    public float horizontalMovement { get; set; }
-    public float verticalMovement { get; set; }
+    [Header("Properties")]
+    public int speed;
+    public Rigidbody2D rb;
+    private float horizontalMovement;
+    private float verticalMovement;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
